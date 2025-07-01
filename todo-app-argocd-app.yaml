@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: "https://github.com/bachthyaglx/GitOps.git"
     targetRevision: main
-    path: 4.8/todo-app
+    path: todo-app/k8s
   destination:
     server: https://kubernetes.default.svc
     namespace: default
