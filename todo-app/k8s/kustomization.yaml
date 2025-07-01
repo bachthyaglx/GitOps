@@ -4,6 +4,8 @@ resources:
   - deployment.yaml
   - ingress.yaml
   - service.yaml
+  - persistenceVolume.yaml
+  - persistenceVolumeClaim.yaml
 images:
   - name: todo-app
     newName: bachthyaglx/todo-app:latest

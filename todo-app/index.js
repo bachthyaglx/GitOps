@@ -114,7 +114,6 @@ app.post('/todos', async (req, res) => {
 app.put('/todos/:id', async (req, res) => {
   try {
     const id = parseInt(req.params.id);
-    // Fix: thêm {} để axios gửi một body rỗng (nhưng hợp lệ JSON)
     const response = await axios.put(`http://todo-backend-svc:3000/todos/${id}`, {});
     res.json(response.data);
   } catch (err) {
@@ -132,5 +131,5 @@ app.get('/image', (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`✅ todo-app running on port ${PORT}`);
+  console.log(`todo-app running on port ${PORT}`);
 });
