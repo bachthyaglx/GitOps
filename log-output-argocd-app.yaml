@@ -6,9 +6,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: "https://github.com/bachthyaglx/DevOps_Kubernetes.git"
+    repoURL: "https://github.com/bachthyaglx/GitOps.git"
     targetRevision: main
-    path: 4.7/log-output
+    path: manifests
   destination:
     server: https://kubernetes.default.svc
     namespace: default
